@@ -42,13 +42,15 @@ Este projeto faz parte do meu roadmap de estudos em Python e infraestrutura, e t
 
 ```
 relatorio_sistema/
-├── main.py               # Ponto de entrada do programa (interface CLI)
-├── coleta_sistema.py     # Funções para coletar dados do sistema operacional e hardware
-├── coleta_rede.py        # Funções para coletar dados de rede
-├── gerador_relatorio.py  # Geração dos arquivos de relatório (.txt ou .csv)
-└── tests/
-    ├── test_coleta_sistema.py
-    └── test_gerador_relatorio.py
+    └src/
+        ├── main.py               # Ponto de entrada do programa (interface CLI)
+        ├── coleta_sistema.py     # Funções para coletar dados do sistema operacional e hardware
+        ├── coleta_rede.py        # Funções para coletar dados de rede
+        ├── gerador_relatorio.py  # Geração dos arquivos de relatório (.txt ou .csv)
+    └tests/
+        ├── test_coleta_sistema.py
+        ├── test_gerador_relatorio.py
+        └── test_coleta_rede.py
 ```
 
 ---
