@@ -7,13 +7,13 @@ from src.coleta_rede import get_mac_address, get_ip_address
 
 def creat_file():
     with open('./relatorio_teste.csv', mode='w', newline='', encoding='latin-1') as csvfile:
-        writer = csv.writer(csvfile, delimiter=',')
+        writer = csv.writer(csvfile, delimiter=' ')
         writer.writerow(['Sistema Operacional:', get_So_name()])
         writer.writerow(['Uso de CPU:', get_cpu_percent()])
         writer.writerow(['Memoria Total:', get_mem_total()])
-        writer.writerow(['Memoria Usanda:', get_disc_usage()])
+        writer.writerow(['Memoria Usada:', get_disc_usage()])
         writer.writerow(['Endereço IP:', get_ip_address()])
-        writer.writerow(['MAC da Maquina', get_mac_address()])
+        writer.writerow(['MAC da Maquina:', get_mac_address()])
 
 
 def clean_report():
